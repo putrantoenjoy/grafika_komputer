@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Bagus Ika Putranto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="bahan/css/slide.css">
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" integrity="sha512-dLxUelApnYxpLt6K2iomGngnHO83iUvZytA3YjDUCjT0HDOHKXnVYdf3hU4JjM8uEhxf9nD1/ey98U3t2vZ0qQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <script src="./node_modules/three/build/three.js"></script>
+    <script src="./node_modules/three/examples/js/controls/OrbitControls.js"></script>
+    <!-- <script src="./node_modules/three/examples/js/controls/OrbitControls.js"></script> -->
+    <script src="./node_modules/three/examples/js/libs/stats.min.js"></script>
+</head>
+<body>
+    <nav>
+        <a href="#">Portofolio</a>
+        <ul  id="mySidenav" class="sidenav list-none">
+            <a href="javascript:void(0)" class="closebtn close-navbar" onclick="closeNav()">&times;</a>
+            <li><a id="home" class="navnone hover-blue" href="index.html">Home</a></li>
+            <li><a class="navnone hover-blue" href="#about">About</a></li>
+            <li><a class="navnone hover-blue" href="#animasi">Animasi</a></li>
+            <li><a class="navnone hover-blue" href="#contact">Contact</a></li>
+        </ul>
+        <span class="navbarside open-navbar" style="font-size:30px;cursor:pointer;" onclick="openNav()">&#9776;</span>
+    </nav>
+    <br><br><br>
+    <div style="background-color: white;padding: 20px;">
+        <br>
+        <div class="content-pc">
+            <div>
+                <img class="content-foto-pc" src="assets/pp.jpg" alt="">
+            </div>
+            <div style="display: block;">
+                <div class="padding-kanankiri">
+                    <h1 style="text-align: center;">bagus ika putranto</h1>
+                    <p style="text-align: justify;">Halo, nama saya bagus ika putranto. Lahir di Banyuwangi pada tanggal 23 april 2001. Saya merupakan mahasiswa D3 Teknik Informatika Politekni Negeri Banyuwangi. Saya ingin menjadi seorang Frontend dan Backend developer</p>
+                </div>
+                <div style="text-align: center;">
+                    <a class="tombol-unduh hover-blue" href="#">unduh cv</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-inlineblock">
+        <div style="justify-content: space-evenly; text-align: center;">
+            <hr style="margin: 10px;">
+            <h1 style="text-align: center;">Cek Kunjungan</h1>
+            <p>masukkan no absen</p>
+            <input class="form-shadow" type="text" id="tulisabsen">
+            <p>masukkan nama</p>
+            <input class="form-shadow" type="text" id="tulisnama">
+            <br>
+            <button class="margin-component buttom-blue" onclick="urutan()">Masuk</button>
+        
+            <p id="hasil"></p>
+            <p id="hasil1"></p>
+        </div>
+    </div>
+    <div id="about" class="bg-inlineblock">
+        <div style="justify-content: space-evenly;">
+            <hr style="margin: 10px;">
+            <h1 style="text-align: center;">pengalaman organisasi</h1>
+            <div style="text-align: center;">
+                <p>1. Pernah mengikuti organisasi kirmago di SMA</p>
+                <p>2. Pernah mengikuti organisasi pramuka di SMA</p>
+                <p>3. Pernah mengikuti organisasi bulutangkis di SMA</p>
+            </div>
+        </div>
+    </div>
+    <div class="bg-inlineblock">
+        <div style="justify-content: space-evenly;">
+            <hr style="margin: 10px;">
+            <h1 style="text-align: center;">Keahlian</h1>
+            <div style="text-align: center;">
+                <p>1. HTML</p>
+                <p>2. PHP</p>
+                <p>3. Javascript</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="bg-inlineblock">
+        <hr style="margin: 10px;">
+        <h1 style="text-align: center;">Projek Saya</h1>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img src="assets/1.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+              <img src="assets/2.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img src="assets/3.jpg" style="width:100%">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+    </div>
+    
+    <div class="bg-inlineblock" id="animasi">
+        <hr style="margin: 10px;">
+        <h1 style="text-align: center;">Animasi Saya</h1>
+    </div>
+
+    <!-- tools -->
+    <script src="alam/tampilan.js"></script>
+    <script src="alam/tools.js"></script>
+    <script src="tools/create.js"></script>
+    <script src="tools/material.js"></script>
+
+    <!-- hukum alam -->
+    <script src="alam/tanah.js"></script>
+    <script src="alam/bulan.js"></script>
+
+    <!-- rumah -->
+    <script src="rumah/atap_rumah.js"></script>
+    <script src="rumah/tiang_rumah.js"></script>
+    <script src="rumah/lantai.js"></script>
+    <script src="rumah/tangga_rumah.js"></script>
+    <script src="rumah/nama_palang.js"></script>
+    <script src="rumah/banener.js"></script>
+    <script src="rumah/tekan.js"></script>
+    
+    <!-- luar rumah -->
+    <script src="luar_rumah/jalan.js"></script>
+    <script src="luar_rumah/jalantrotoar.js"></script>
+    <script src="luar_rumah/pagar.js"></script>
+    <script src="luar_rumah/kendaraan.js"></script>
+    <script src="luar_rumah/pohondijalan.js"></script>
+    <script src="luar_rumah/nama.js"></script>
+    <script src="luar_rumah/lampupagar.js"></script>
+    <script src="luar_rumah/palang.js"></script>
+    
+    <!-- halaman rumah -->
+
+
+    <script src="script-lanjutan.js">
+        
+    </script>
+
+    <div class="bg-inlineblock" style="text-align: center;" id="contact">
+        <hr style="margin: 10px;">
+        <p>jika ingin ditanyakan hubungi</p>
+        <a style="margin: 20px; border: 1px solid;" class="hover-blue contact contact-slide" href="">hubungi</a>
+    </div>
+    
+    <script src="navbaranimation.js"></script>
+    <script src="bahan/js/slide.js"></script>
+    <script src="hitung.js"></script>
+    <script src=""></script>
+</body>
+</html>
