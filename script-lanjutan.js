@@ -5,6 +5,8 @@ window.addEventListener('resize', function() {
 });
 
 function update() {
+    lampupagarkanan.rotation.y += 0.01; //animasi rotasi sumbu x
+    lampupagarkiri.rotation.y -= 0.01; //animasi rotasi sumbu x
     requestAnimationFrame(update);
     renderer.render(scene, camera);
 }
